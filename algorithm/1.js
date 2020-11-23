@@ -36,7 +36,6 @@ function main(input) {
       stack[stack.length - 1].str += inputStr;
     }
   }
-  console.log("main -> result", result);
   return result;
 }
 
