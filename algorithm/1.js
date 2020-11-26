@@ -1,7 +1,3 @@
-/**
- * input 2[abc3[d]]
- * output abcdddabcddd
- */
 function main(input) {
   const stack = [];
   const length = input.length;
