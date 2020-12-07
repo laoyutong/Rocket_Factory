@@ -46,6 +46,8 @@
 
 **reactive+effect**
 
+**lazyLoad**
+
 ## Node 篇
 
 **koa2**
