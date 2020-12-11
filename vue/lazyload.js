@@ -1,3 +1,8 @@
+/**
+ * 自定义指令 v-lazy="xxx"
+ * 实现图片懒加载
+ */
+
 const viewHeight = document.documentElement.clientHeight;
 
 const loadImg = (el, binding) => {

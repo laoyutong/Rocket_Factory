@@ -42,6 +42,8 @@
 
 **array**
 
+**sort**
+
 ## Vue 篇
 
 **reactive+effect**
