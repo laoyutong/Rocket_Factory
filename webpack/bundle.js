@@ -5,7 +5,6 @@
       return moduleCache[moduleId].exports;
     }
     const module = (moduleCache[moduleId] = {
-      moduleId,
       exports: {},
     });
     modules[moduleId].call(
