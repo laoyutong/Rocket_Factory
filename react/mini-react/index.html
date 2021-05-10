@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mini-react</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="react.js"></script>
+    <script>
+      function App(props) {
+        const [count, setCount] = useState(0);
+        return createElement(
+          "div",
+          { className: "title", onClick: () => setCount((v) => v + 1) },
+          createElement("span", { className: props.name }, "count: " + count)
+        );
+      }
+      render(
+        createElement(App, { name: "world" }, []),
+        document.getElementById("root")
+      );
+    </script>
+  </body>
+</html>
