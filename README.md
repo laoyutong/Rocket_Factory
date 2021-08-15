@@ -5,3 +5,5 @@ Simple source code implementation
 ## mini-react
 
 ## rc-form
+
+## redux
