@@ -7,3 +7,5 @@ Simple source code implementation
 ## rc-form
 
 ## redux
+
+## react-redux
