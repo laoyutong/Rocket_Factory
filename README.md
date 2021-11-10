@@ -18,6 +18,8 @@ react-redux
 
 reactive-react
 
+recoil
+
 ## node
 
 koa
