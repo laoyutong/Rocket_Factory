@@ -16,6 +16,8 @@ redux
 
 react-redux
 
+redux-toolkit
+
 reactive-react
 
 recoil
