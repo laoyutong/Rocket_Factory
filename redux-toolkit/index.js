@@ -48,3 +48,28 @@ export const createSlice = ({ name, initialState, reducers }) => {
     actions,
   };
 };
+
+export const createAsyncThunk = (type, payloadCreator) => {
+  const pending = createAction(type + "/pending");
+  const fulfilled = createAction(type + "/fulfilled");
+  const rejected = createAction(type + "/rejected");
+
+  const actionCreator = (arg) => {
+    return (dispatch) => {
+      dispatch(pending());
+      return payloadCreator(arg)
+        .then((res) => {
+          dispatch(fulfilled(res));
+        })
+        .catch((err) => {
+          dispatch(rejected(err));
+        });
+    };
+  };
+
+  return Object.assign(actionCreator, {
+    pending,
+    fulfilled,
+    rejected,
+  });
+};
